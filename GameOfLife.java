@@ -1,4 +1,4 @@
-package bbc;
+﻿package bbc;
 /*
  * Author: Victoria Cody
  * Title: Game of Life
@@ -56,7 +56,7 @@ public class GameOfLife {
 		else if (cell[x][y] == false && (neighbours == 2 || neighbours == 3))
 			return false;
 		// Scenario 4: Creation of Life
-		else if (neighbours == 3 && cell[x][y] == true)
+		else if (cell[x][y] == true && neighbours == 3)
 			return false;
 		else
 			return true;
